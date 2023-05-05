@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-mvp-component-cxik
+  namespace: mvp-demo-dev-namespace-qedl-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:1b7484820c0aae758ae85d5bae8ecf2a969a078cbd436eb2b36cad30fbcd93c9
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
